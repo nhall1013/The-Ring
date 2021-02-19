@@ -1,0 +1,56 @@
+<!DOCTYPE html5>
+<!-- This is the view for Chapter 3 - Branch 3 -->
+<html>
+    <head>
+        <title> The Ring </title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto&display=swap" rel="stylesheet"> 
+        
+        <script>
+            function inputController(){
+                if(option2.checked){
+                    parent.location="win.html";
+                }
+                else{
+                    parent.location="lose.html";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1> The Ring </h1>
+        </header>
+        <section>
+            <article>
+                <h2> Question 3 </h2>
+                
+                <p>
+                    The being became even more frustrated. He is determined to destroy Earth and everything on it!
+                </p>
+
+                <p>
+                    <i>"This is your third and final question. This question will test your memory. I'm confident you will answer incorrectly. Earth will be destroyed!
+                    What is the combination of all the answers from the first two questions?"</i>
+                </p>
+                <div>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="option1" name="input-name" value="option1">
+                    <label> ICSC 8024 </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="option2" name="input-name" value="option2">
+                    <label> CSCI 4208 </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="option3" name="input-name" value="option3">
+                    <label> SCCI 2048 </label>
+                    <br>
+                    <br>
+                    <input type="button" onclick="inputController()" value="Submit">
+                </div>
+            </article>
+        </section>
+    </body>
+</html>

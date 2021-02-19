@@ -1,0 +1,94 @@
+/* Stylesheets for interactive story */
+
+html{
+    background-image: url("../assets/ring-background2.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header{
+    font-family: "Orbitron", sans-serif;
+    font-size: 48px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 50px;
+    font-style: italic;
+}
+
+h2{
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+h3{
+    font-family: "Orbitron", sans-serif;
+    font-size: x-large;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+article{
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    flex: 2 200px;
+}
+
+article:nth-of-type(1){
+    flex: 1 200px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    background-color: grey;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    font-size: medium;
+    text-align: center;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+div, option, label, select{
+    font-size: medium;
+}
+
+input[type="button"], input[type="submit"]{
+    background-color: grey;
+    color: white;
+    font-size: small;
+    text-align: center;
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    text-transform: uppercase;
+}

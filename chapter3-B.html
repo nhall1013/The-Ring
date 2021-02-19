@@ -1,0 +1,56 @@
+<!DOCTYPE html5>
+<!-- This is the view for Chapter 3 - Branch 2 -->
+<html>
+    <head>
+        <title> The Ring </title>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Roboto&display=swap" rel="stylesheet"> 
+        
+        <script>
+            function inputController(){
+                if(input1.value == "4208"){
+                    parent.location="chapter2-B.html";
+                }
+                else{
+                    parent.location="lose.html";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1> The Ring </h1>
+        </header>
+        <section>
+            <article>
+                <h2> Question 2 </h2>
+            
+                <p>
+                    The voice became more menacing. This being was clearly becoming agitated. 
+                </p>
+
+                <p>
+                    <i>"So you got the first one correct? This next question will stop you for sure! On your approach to "the ring", as the humans like to call it, you had to perform some
+                    calculations to correct your trajectory. List the solutions to those calculations in order from the first calculation you made to the last."</i>
+                </p>
+
+                <p>
+                    How was this possible? How could this being possibly know that? How long had it known of your arrival? Then again, it was speaking to you inside your own head.
+                </p>
+            </article>
+            <article>
+                <p> Think back on your earlier calculations and enter the number below. There's no need to put spaces between the numbers. Don't forget! Earth is depending on you! </p>
+                <br>
+                <br>
+                <br>
+                <div>
+                    <input type="text" id="input1">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" value="Submit" onclick="inputController()">
+                </div>
+            </article>
+        </section>
+    </body>
+</html>
